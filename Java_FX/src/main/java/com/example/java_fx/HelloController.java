@@ -7,8 +7,9 @@ import javafx.scene.control.Label;
 
 public class HelloController {
 
+    public Button txtLicznik;
     int clickCounter = 0;
-    private Button btnMain;
+    
     @FXML
     private Label welcomeText;
 
@@ -20,10 +21,9 @@ public class HelloController {
 
 
 
-    public void onBtnAction(ActionEvent actionEvent) {
+    public void TextField(ActionEvent actionEvent) {
         System.out.println("Klikniecie nr " + ++clickCounter);
-        if (clickCounter == 1)
-            btnMain.setText("I jeszcze raz");
+        
 
     }
 }
